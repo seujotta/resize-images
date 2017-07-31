@@ -10,6 +10,10 @@ gem 'rails', '~> 5.1.2'
 gem 'puma', '~> 3.7'
 gem 'mongoid'
 
+gem 'rest-client'
+gem "paperclip", "~> 5.0.0"
+
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
