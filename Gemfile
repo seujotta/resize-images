@@ -12,7 +12,8 @@ gem 'mongoid'
 
 gem 'rest-client'
 gem "paperclip", "~> 5.0.0"
-
+gem "mongoid-paperclip"
+gem 'kaminari-mongoid'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

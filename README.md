@@ -1,24 +1,27 @@
-# README
+## Resolução do problema Hells Triangle
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ara resolver o problema, criei um projeto rails api.
 
-Things you may want to cover:
+Dentro do projeto criei uma task para consumir o endpoint de imagens, e pegar cada uma delas.
 
-* Ruby version
+Para rodar a aplicação basta clonar esse repositório, executar o comando:
 
-* System dependencies
+```ruby
+bundle install
+```
 
-* Configuration
+OBS: Essa aplicação foi desenvolvida com ruby 2.3.3 e com rails 5. É necessário que o servidor tenha a biblioteca imagemagick instalada.
 
-* Database creation
+Após instalar as dependências do projeto rode a task:
 
-* Database initialization
+```ruby
+rake images_source:populate
+```
 
-* How to run the test suite
+após o término rode:
 
-* Services (job queues, cache servers, search engines, etc.)
+```ruby
+rails s Puma
+```
 
-* Deployment instructions
-
-* ...
+E acesse `http://localhost:3000`
